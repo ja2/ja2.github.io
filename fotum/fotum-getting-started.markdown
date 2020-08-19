@@ -1,9 +1,6 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: fotum-page
-title:  Getting Started | Fotum
+title:  Getting Started - Fotum
 permalink: /software/fotum/getting-started
 ---
 
