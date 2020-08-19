@@ -14,7 +14,7 @@ Fotum loads images from a fotum folder on a USB drive plugged into your Roku dev
 
 ### There was a problem connecting to Google Photos – Error from Google was: Re-authentication of apps is not permitted:
 
-Due to the way that Google’s authentication works, if you need to get a new code for Fotum – for example if it the original code stops working or there is a problem when first setting up, then you will need to go to your account settings and completely remove access for Fotum before re-authorizing, otherwise Fotum will be unable to access your account after the first time. To remove Fotum completely, see your Google Account App Permissions page.
+Due to the way that Google’s authentication works, if you need to get a new code for Fotum – for example if it the original code stops working or there is a problem when first setting up, then you will need to go to your account settings and completely remove access for Fotum before re-authorizing, otherwise Fotum will be unable to access your account after the first time. To remove Fotum completely, see your [Google Account Permissions page](https://myaccount.google.com/permissions).
 
 ### Fotum has started to show an “error downloading” message for photos from Cloud providers:
 

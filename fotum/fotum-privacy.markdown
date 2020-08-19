@@ -51,7 +51,7 @@ Clearing the cache may take up to 30 seconds, during which time your Roku device
 
 ### What do we collect?
 
-The Fotum Auth service (hosted at https://fotum-auth.ja2.co.uk, in the United Kingdom), handles the authentication process for cloud based photo providers.
+The Fotum Auth service (hosted at [https://fotum-auth.ja2.co.uk](https://fotum-auth.ja2.co.uk), in the United Kingdom), handles the authentication process for cloud based photo providers.
 
 During the authentication process your credentials are given directly to your cloud provider on their authentication screen – the Fotum Roku app, and the Fotum-Auth service do not see these. One you’ve authenticated and approved Fotum’s access request, a token is sent to the Fotum-Auth service and held for a limited time. It is not permanently stored. The code that you are given is a one-time code. Once you’ve used it all data is cleared from the Fotum-Auth service immediately.
 
@@ -81,7 +81,7 @@ The contents of the album are rechecked each time the screensaver starts, so if 
 
 Google’s tokens expire approximately every hour. To maintain access for the screensaver the Fotum Roku app will request a refreshed token from Google when necessary.
 
-Due to the way that Google’s authentication works, if you need to get a new code for Fotum – for example if it the original code stops working or there is a problem when first setting up, then you will need to go to your account settings and completely remove access for Fotum before re-authorizing, otherwise Fotum will be unable to access your account after the first time. To remove Fotum’s access completely, see your Google Account App Permissions page.
+Due to the way that Google’s authentication works, if you need to get a new code for Fotum – for example if it the original code stops working or there is a problem when first setting up, then you will need to go to your account settings and completely remove access for Fotum before re-authorizing, otherwise Fotum will be unable to access your account after the first time. To remove Fotum’s access completely, see your [Google Account Permissions page](https://myaccount.google.com/permissions).
 
 ### How your cloud data is handled by the Fotum Roku app:
 
