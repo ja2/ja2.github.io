@@ -10,13 +10,27 @@
   position: relative;
 }
 
+.site-banner {
+  margin-bottom: 16px;
+}
+
 .site-title {
-  @include relative-font-size(1.625);
-  font-weight: 300;
-  line-height: $base-line-height * $base-font-size * 2.25;
+  @include relative-font-size(2);
+  font-weight: 600;
+  line-height: $base-line-height * $base-font-size * 2;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
+
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
+}
+
+.site-strap {
+  @include relative-font-size(1);
+  font-weight: 200;
+  letter-spacing: -1px;
 
   &,
   &:visited {
@@ -25,8 +39,8 @@
 }
 
 .site-nav {
-  float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
+  background-color: $black-color;
 
   .nav-trigger {
       display: none;
@@ -37,12 +51,18 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $white-color;
     line-height: $base-line-height;
+    text-transform: uppercase;
+    font-weight: 500;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
+    }
+
+    &.page-link-active {
+      color: $brand-color;
     }
   }
 
@@ -54,6 +74,7 @@
     border: 1px solid $grey-color-light;
     border-radius: 5px;
     text-align: right;
+    z-index: 99;
 
     label[for="nav-trigger"] {
       display: block;
@@ -99,8 +120,6 @@
     }
   }
 }
-
-
 
 /**
  * Site footer
