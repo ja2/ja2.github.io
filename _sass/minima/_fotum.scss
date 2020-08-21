@@ -138,10 +138,19 @@ $fotum-brand-color: red !default;
         padding-bottom: 5px;
       }
   
-      .page-link {
+      a.page-link {
         display: block;
         padding: 5px 10px;
-  
+    
+        &,
+        &:visited {
+          color: $text-color
+        }
+          
+        &.page-link-active {
+          color: $fotum-brand-color;
+        }
+    
         &:not(:last-child) {
           margin-right: 0;
         }
