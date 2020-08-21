@@ -12,7 +12,7 @@ $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
-$brand-color:      #489e4f !default;
+$ja2-brand-color:      #489e4f !default;
 
 $white-color:      #fcfcfc !default;
 $grey-color:       #828282 !default;
@@ -53,5 +53,6 @@ $on-smallscreen:   1024px !default;
 @import
   "minima/base",
   "minima/layout",  
+  "minima/ja2",
   "minima/fotum"
 ;

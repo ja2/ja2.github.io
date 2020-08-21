@@ -10,116 +10,19 @@
   position: relative;
 }
 
-.site-banner {
-  margin-bottom: 16px;
-}
-
-.site-title {
-  @include relative-font-size(2);
+a.site-title {
   font-weight: 600;
   line-height: $base-line-height * $base-font-size * 2;
   letter-spacing: -1px;
   margin-bottom: 0;
-
-  &,
-  &:visited {
-    color: $grey-color-dark;
-  }
 }
 
 .site-strap {
-  @include relative-font-size(1);
   font-weight: 200;
   letter-spacing: -1px;
-
-  &,
-  &:visited {
-    color: $grey-color-dark;
-  }
+  color: $grey-color-dark;
 }
 
-.site-nav {
-  line-height: $base-line-height * $base-font-size * 2.25;
-  background-color: $black-color;
-
-  .nav-trigger {
-      display: none;
-  }
-
-  .menu-icon {
-    display: none;
-  }
-
-  .page-link {
-    color: $white-color;
-    line-height: $base-line-height;
-    text-transform: uppercase;
-    font-weight: 500;
-
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-
-    &.page-link-active {
-      color: $brand-color;
-    }
-  }
-
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
-    z-index: 99;
-
-    label[for="nav-trigger"] {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 36px;
-      z-index: 2;
-      cursor: pointer;
-    }
-
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg {
-        fill: $grey-color-dark;
-      }
-    }
-
-    input ~ .trigger {
-      clear: both;
-      display: none;
-    }
-
-    input:checked ~ .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-    }
-  }
-}
 
 /**
  * Site footer

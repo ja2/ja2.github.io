@@ -1,6 +1,7 @@
 ---
 layout: fotum-page
 title:  Privacy - Fotum
+menu_title: Privacy
 permalink: /software/fotum/privacy
 ---
 

@@ -59,3 +59,10 @@ header_pages:
   - software.markdown
   - online.markdown
 
+fotum_pages:
+  - fotum/fotum.markdown
+  - fotum/fotum-getting-started.markdown
+  - fotum/fotum-troubleshooting.markdown
+  - fotum/fotum-service-updates.markdown
+  - fotum/fotum-privacy.markdown
+  

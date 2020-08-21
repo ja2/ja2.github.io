@@ -1,6 +1,7 @@
 ---
 layout: fotum-page
 title:  Fotum
+menu_title: Fotum
 permalink: /software/fotum
 ---
 

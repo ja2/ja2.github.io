@@ -1,6 +1,7 @@
 ---
 layout: fotum-page
 title:  Troubleshooting - Fotum
+menu_title: Troubleshooting
 permalink: /software/fotum/troubleshooting
 ---
 

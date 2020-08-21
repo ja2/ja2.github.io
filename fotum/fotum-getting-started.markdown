@@ -1,6 +1,7 @@
 ---
 layout: fotum-page
 title:  Getting Started - Fotum
+menu_title: Getting Started
 permalink: /software/fotum/getting-started
 ---
 

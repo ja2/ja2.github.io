@@ -1,73 +1,51 @@
 
-$fotum-brand-color: red !default;
-
 /**
 * Header
 */
-.fotum a.site-title {
+.ja2 a.site-title {
     
-  @include relative-font-size(1.4);
+    @include relative-font-size(2);
 
-  &,
-  &:visited {
-    color: $grey-color-dark;
-  }
+    &,
+    &:visited {
+      color: $grey-color-dark;
+    }
 }
 
-.fotum .site-strap {
-@include relative-font-size(.8);
+.ja2 .site-strap {
+  @include relative-font-size(1);
 }
 
-.fotum .site-banner {
-  margin-bottom: 8px;
-}
-
-.fotum-service{
-    padding: 4px 8px;
-    background-color: $grey-color-light;
+.ja2 .site-banner {
     margin-bottom: 16px;
 }
-.fotum-service-green{
-    font-weight: 600;
-    color: darkgreen;
-}
-.fotum-service-red{
-    font-weight: 600;
-    color: darkred;
-}
-.fotum-service-amber{
-    font-weight: 600;
-    color: darkorange;
-}
-
 
 /**
  * Links
  */
-.fotum a {
-  color: $fotum-brand-color;
-  text-decoration: none;
-
-  &:visited {
-    color: darken($fotum-brand-color, 15%);
-  }
-
-  &:hover {
-    color: lighten($fotum-brand-color, 15%);
-    text-decoration: underline;
-  }
-
-  .social-media-list &:hover {
+ .ja2 a {
+    color: $ja2-brand-color;
     text-decoration: none;
-
-    .username {
+  
+    &:visited {
+      color: darken($ja2-brand-color, 15%);
+    }
+  
+    &:hover {
+      color: lighten($ja2-brand-color, 15%);
       text-decoration: underline;
     }
-  }
+  
+    .social-media-list &:hover {
+      text-decoration: none;
+  
+      .username {
+        text-decoration: underline;
+      }
+    }
 }
 
-
-.fotum-nav {
+.ja2 .site-nav {
     line-height: $base-line-height * $base-font-size * 2.25;
     background-color: $black-color;
   
@@ -91,7 +69,7 @@ $fotum-brand-color: red !default;
       }
   
       &.page-link-active {
-        color: $fotum-brand-color;
+        color: $ja2-brand-color;
       }
     }
   

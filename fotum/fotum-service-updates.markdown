@@ -1,6 +1,7 @@
 ---
 layout: fotum-page
 title:  Service Updates - Fotum
+menu_title: Service Updates
 permalink: /software/fotum/service-updates
 ---
 
