@@ -5,6 +5,7 @@
 .ja2 a.site-title {
     
     @include relative-font-size(2);
+    line-height: $base-line-height * $base-font-size * 2;
 
     &,
     &:visited {
@@ -17,7 +18,7 @@
 }
 
 .ja2 .site-banner {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 /**

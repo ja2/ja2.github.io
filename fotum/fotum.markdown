@@ -15,7 +15,7 @@ Fotum creates a new slideshow everytime, offering lots of ways to customize colo
 
 Fotum will show images from:
 
-- Google Photos New!
+- Google Photos
 - Dropbox
 - A USB  stick inserted into your Roku device (if supported by your device).
 

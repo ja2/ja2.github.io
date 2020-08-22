@@ -1,12 +1,21 @@
 
 $fotum-brand-color: red !default;
 
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');	
+
+body.fotum {
+  font-family: Roboto, -apple-system, Helvetica;;
+}
+
+
 /**
 * Header
 */
 .fotum a.site-title {
     
   @include relative-font-size(1.4);
+  line-height: $base-line-height * $base-font-size * 1.8;
+  font-family: $base-font-family;
 
   &,
   &:visited {
@@ -14,13 +23,17 @@ $fotum-brand-color: red !default;
   }
 }
 
-.fotum .site-strap {
-@include relative-font-size(.8);
+/**
+* Footer
+*/
+
+.fotum .site-footer {
+  font-family: $base-font-family;
 }
 
-.fotum .site-banner {
-  margin-bottom: 8px;
-}
+/**
+* Service updates
+*/
 
 .fotum-service{
     padding: 4px 8px;
