@@ -11,6 +11,10 @@ body.fotum {
 /**
 * Header
 */
+
+.fotum .site-header {
+  z-index: 1;
+}
 .fotum a.site-title {
     
   @include relative-font-size(1.4);
@@ -20,6 +24,50 @@ body.fotum {
   &,
   &:visited {
     color: $grey-color-dark;
+  }
+}
+
+.fotum-banner {
+  position: sticky;
+  width: 100%;
+  top:0;
+
+  &.fotum-banner-withsplash {
+    margin-top: -304px;
+    margin-bottom: 238px;
+    z-index: 1;
+    
+    @include media-query($on-smallscreen) {
+      margin-top: -234px;
+      margin-bottom: 183px;
+    }
+  }
+}
+.fotum-banner-image {
+  background-image: url("/assets/fotum/splashbanner_964.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 66px;
+  width: 100%;
+
+  @include media-query($on-smallscreen) {
+    background-image: url("/assets/fotum/splashbanner_740.jpg");
+    height: 51px;
+  }
+}
+.fotum-splash {
+  width: 100%;
+}
+.fotum-splash-image {
+  background-image: url("/assets/fotum/splashbg_964.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 542px;
+  width: 100%;
+  
+  @include media-query($on-smallscreen) {  
+    background-image: url("/assets/fotum/splashbg_740.jpg");
+    height: 416px;
   }
 }
 
@@ -36,9 +84,9 @@ body.fotum {
 */
 
 .fotum-service{
+    width: 100%;
     padding: 4px 8px;
     background-color: $grey-color-light;
-    margin-bottom: 16px;
 }
 .fotum-service-green{
     font-weight: 600;
@@ -53,6 +101,14 @@ body.fotum {
     color: darkorange;
 }
 
+.fotum-content-withsplash {
+
+  min-height: calc(100vh - 346px);
+  
+  @include media-query($on-smallscreen) {
+    min-height: calc(100vh - 331px);
+  }
+}
 
 /**
  * Links
@@ -82,7 +138,9 @@ body.fotum {
 
 .fotum-nav {
     line-height: $base-line-height * $base-font-size * 2.25;
-    background-color: $black-color;
+    background-color: $background-color;
+    position:sticky;
+    top: 66px;
   
     .nav-trigger {
         display: none;
@@ -93,7 +151,7 @@ body.fotum {
     }
   
     a.page-link {
-      color: $white-color;
+      color: $text-color;
       line-height: $base-line-height;
       text-transform: uppercase;
       font-weight: 500;
@@ -106,6 +164,10 @@ body.fotum {
       &.page-link-active {
         color: $fotum-brand-color;
       }
+    }
+    
+    @include media-query($on-smallscreen) {
+      top: 51px;
     }
   
     @include media-query($on-palm) {

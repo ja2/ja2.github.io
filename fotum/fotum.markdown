@@ -1,8 +1,9 @@
 ---
 layout: fotum-page
 title:  Fotum
-menu_title: Fotum
+menu_title: Home
 permalink: /software/fotum
+custom_splash: true
 ---
 
 #  Fotum

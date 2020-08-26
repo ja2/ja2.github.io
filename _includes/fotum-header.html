@@ -1,5 +1,4 @@
 <header class="site-header" role="banner">
-
   <div class="wrapper">
     {%- assign page_paths = site.fotum_pages -%}
     
@@ -7,10 +6,25 @@
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     </div>
   </div>
+</header>
+
+{%- if page.custom_splash -%}
+<div class="fotum-splash wrapper">
+  <div class="fotum-splash-image"></div>
+</div>
+<div class="fotum-banner fotum-banner-withsplash wrapper">
+  <div class="fotum-banner-image"></div>
+</div>
+{%- else -%}
+<div class="fotum-banner wrapper">
+  <div class="fotum-banner-image"></div>
+</div>
+{%- endif -%}
 
   {%- if page_paths -%}
     <nav class="fotum-nav">
       <div class="wrapper">
+      
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -35,4 +49,3 @@
       </div>
     </nav>
   {%- endif -%}
-</header>

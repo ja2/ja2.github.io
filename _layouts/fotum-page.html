@@ -9,11 +9,12 @@ title: Fotum | JA2 Technologies Ltd
   <body class="fotum">
 
     {%- include fotum-header.html -%}
+    
+    {%- include fotum-status.html -%}
 
-    <main class="page-content" aria-label="Content">
+    <main class="page-content {% if page.custom_splash %} fotum-content-withsplash{% endif %}" aria-label="Content">
       <div class="wrapper">
         
-        {%- include fotum-status.html -%}
 
         {{ content }}
       </div>

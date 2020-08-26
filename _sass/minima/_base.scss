@@ -1,9 +1,9 @@
+
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -142,6 +142,7 @@ pre {
 
 
 
+
 /**
  * Wrapper
  */
@@ -150,8 +151,6 @@ pre {
   max-width:         calc(#{$content-wide} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
   @extend %clearfix;
 
   @include media-query($on-smallscreen) {
@@ -185,8 +184,8 @@ pre {
  */
 
 .svg-icon {
-    width: 16px;
-    height: 16px;
+    width: 26px;
+    height: 26px;
     display: inline-block;
     fill: #{$grey-color};
     padding-right: 5px;
