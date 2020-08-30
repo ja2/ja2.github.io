@@ -57,8 +57,8 @@
     .menu-icon {
       display: none;
     }
-  
-    a.page-link {
+
+     a.page-link {
       color: $white-color;
       line-height: $base-line-height;
       text-transform: uppercase;
@@ -83,6 +83,10 @@
       border-radius: 5px;
       text-align: right;
       z-index: 99;
+
+      .wrapper {        
+        width: auto;
+      }
   
       label[for="nav-trigger"] {
         display: block;

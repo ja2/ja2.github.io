@@ -21,6 +21,10 @@ body.fotum {
   line-height: $base-line-height * $base-font-size * 1.8;
   font-family: $base-font-family;
 
+  @include media-query($on-laptop) {
+    line-height: $spacing-unit * 1.865;
+  }
+
   &,
   &:visited {
     color: $grey-color-dark;
@@ -32,10 +36,10 @@ body.fotum {
   top:0;
   
   @include media-query($on-laptop) {
+    position: inherit;
     width: 100vw;
     padding:0;
   }
-
   &.fotum-banner-withsplash {
     margin-top: -304px;
     margin-bottom: 238px;
@@ -47,11 +51,12 @@ body.fotum {
     }
 
     @include media-query($on-laptop) {
-      margin-top: calc(100vw * -0.315);
-      margin-bottom: calc(100vw * 0.245);
+      display:none;
     }
   }
 }
+
+
 .fotum-banner-image {
   background-image: url("/assets/fotum/splashbanner_964.jpg");
   background-size: cover;
@@ -64,12 +69,14 @@ body.fotum {
   }
 
   @include media-query($on-laptop) {
-    height: calc(100vw * 0.069);
+    background-image: url("/assets/fotum/splashbanner_740_mob.jpg");
+    height: calc(100vw * 0.089);
   }
 }
 .fotum-splash {
 
   @include media-query($on-laptop) {
+    position: inherit;
     width: 100vw;
     padding:0;
   }
@@ -87,7 +94,8 @@ body.fotum {
   }
 
   @include media-query($on-laptop) {
-    height: calc(100vw * 0.56);
+    background-image: url("/assets/fotum/splashbg_740_mob.jpg");
+    height: calc(100vw * 0.65);
   }
 }
 
@@ -107,9 +115,8 @@ body.fotum {
     width: 100%;
     padding: 4px 8px;
     background-color: $grey-color-light;
-
     
-    @include media-query($on-palm) {
+    @include media-query($on-laptop) {
       margin-top: $spacing-unit;
     }
 }
@@ -135,7 +142,7 @@ body.fotum {
   }
 
   @include media-query($on-laptop) {
-    min-height: calc(100vh - calc(100vw * 0.56));
+    min-height: auto;
   }
 }
 
@@ -203,7 +210,7 @@ body.fotum {
       top: calc(100vw * 0.069);
     }
   
-    @include media-query($on-palm) {
+    @include media-query($on-laptop) {
       position: absolute;
       top: 9px;
       right: $spacing-unit / 2;
@@ -212,6 +219,10 @@ body.fotum {
       border-radius: 5px;
       text-align: right;
       z-index: 99;
+
+      .wrapper {        
+        width: auto;
+      }
   
       label[for="nav-trigger"] {
         display: block;

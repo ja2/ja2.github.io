@@ -5,7 +5,7 @@
     // Positioning context for the mobile navigation icon
   position: relative;
   
-  @include media-query($on-palm) {
+  @include media-query($on-laptop) {
     min-height: $spacing-unit * 1.865;
   }
 }
