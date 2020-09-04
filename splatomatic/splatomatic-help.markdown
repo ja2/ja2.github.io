@@ -1,6 +1,7 @@
 ---
 layout: splatomatic-page
 title:  Help - Splat-O-Matic App Family
+menu_title: Help
 permalink: /software/splatomatic/help
 ---
 

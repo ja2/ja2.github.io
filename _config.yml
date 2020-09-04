@@ -65,4 +65,9 @@ fotum_pages:
   - fotum/fotum-troubleshooting.markdown
   - fotum/fotum-service-updates.markdown
   - fotum/fotum-privacy.markdown
+
+splatomatic_pages:
+  - splatomatic/splatomatic.markdown
+  - splatomatic/splatomatic-help.markdown
+  - splatomatic/splatomatic-privacy.markdown
   

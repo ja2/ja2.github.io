@@ -1,7 +1,9 @@
 ---
 layout: splatomatic-page
 title:  Splat-O-Matic App Family
+menu_title: Home
 permalink: /software/splatomatic
+custom_splash: true
 ---
 
 # Splat-O-Matic App Family

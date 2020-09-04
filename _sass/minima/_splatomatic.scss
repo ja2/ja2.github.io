@@ -1,0 +1,261 @@
+
+$splatomatic-brand-color: #7F0000 !default;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body.splatomatic {
+  font-family: 'Source Code Pro',monospace;
+}
+
+
+/**
+* Header
+*/
+
+.splatomatic .site-header {
+  z-index: 1;
+}
+.splatomatic a.site-title {
+    
+  @include relative-font-size(1.4);
+  line-height: $base-line-height * $base-font-size * 1.8;
+  font-family: $base-font-family;
+
+  @include media-query($on-laptop) {
+    line-height: $spacing-unit * 1.865;
+  }
+
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
+}
+
+.splatomatic-banner {
+  position: sticky;
+  top:0;
+  
+  @include media-query($on-laptop) {
+    position: inherit;
+    width: 100vw;
+    padding:0;
+  }
+  &.splatomatic-banner-withsplash {
+    margin-top: -271px;
+    margin-bottom: 205px;
+    z-index: 1;
+    
+    @include media-query($on-smallscreen) {
+      margin-top: -210px;
+      margin-bottom: 159px;
+    }
+
+    @include media-query($on-laptop) {
+      display:none;
+    }
+  }
+}
+
+
+.splatomatic-banner-image {
+  background-image: url("/assets/splatomatic/splat_banner_964_trans.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 66px;
+
+  @include media-query($on-smallscreen) {
+    background-image: url("/assets/splatomatic/splat_banner_740_trans.png");
+    height: 51px;
+  }
+
+  @include media-query($on-laptop) {
+    background-image: url("/assets/splatomatic/splat_banner_740_mob_trans.png");
+    height: calc(100vw * 0.089);
+  }
+}
+.splatomatic-splash {
+
+  @include media-query($on-laptop) {
+    position: inherit;
+    width: 100vw;
+    padding:0;
+  }
+}
+.splatomatic-splash-image {
+  background-image: url("/assets/splatomatic/splat_bg_splash_964.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 471px;
+  width: 100%;
+  
+  @include media-query($on-smallscreen) {  
+    background-image: url("/assets/splatomatic/splat_bg_splash_740.jpg");
+    height: 362px;
+  }
+
+  @include media-query($on-laptop) {
+    background-image: url("/assets/splatomatic/splat_bg_splash_740_mob.jpg");
+    height: calc(100vw * 0.49);
+  }
+}
+
+/**
+* Footer
+*/
+
+.splatomatic .site-footer {
+  font-family: $base-font-family;
+}
+
+/**
+* Service updates
+*/
+
+.splatomatic-content-withsplash {
+
+  min-height: calc(100vh - 346px);
+  
+  @include media-query($on-smallscreen) {
+    min-height: calc(100vh - 331px);
+  }
+
+  @include media-query($on-laptop) {
+    min-height: auto;
+  }
+}
+
+/**
+ * Links
+ */
+.splatomatic a {
+  color: $splatomatic-brand-color;
+  text-decoration: none;
+
+  &:visited {
+    color: darken($splatomatic-brand-color, 15%);
+  }
+
+  &:hover {
+    color: lighten($splatomatic-brand-color, 15%);
+    text-decoration: underline;
+  }
+
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.splatomatic-nav {
+    line-height: $base-line-height * $base-font-size * 2.25;
+    background-color: $background-color;
+    position:sticky;
+    top: 66px;
+  
+    .nav-trigger {
+        display: none;
+    }
+  
+    .menu-icon {
+      display: none;
+    }
+  
+    a.page-link {
+      color: $text-color;
+      line-height: $base-line-height;
+      text-transform: lowercase;
+      font-weight: 500;
+  
+      // Gaps between nav items, but not on the last one
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+  
+      &.page-link-active {
+        color: $splatomatic-brand-color;
+      }
+    }
+    
+    @include media-query($on-smallscreen) {
+      top: 51px;
+    }
+
+    @include media-query($on-laptop) {    
+      top: calc(100vw * 0.069);
+    }
+  
+    @include media-query($on-laptop) {
+      position: absolute;
+      top: 9px;
+      right: $spacing-unit / 2;
+      background-color: $background-color;
+      border: 1px solid $grey-color-light;
+      border-radius: 5px;
+      text-align: right;
+      z-index: 99;
+
+      .wrapper {        
+        width: auto;
+      }
+  
+      label[for="nav-trigger"] {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 36px;
+        z-index: 2;
+        cursor: pointer;
+      }
+  
+      .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
+  
+        > svg {
+          fill: $grey-color-dark;
+        }
+      }
+  
+      input ~ .trigger {
+        clear: both;
+        display: none;
+      }
+  
+      input:checked ~ .trigger {
+        display: block;
+        padding-bottom: 5px;
+      }
+  
+      a.page-link {
+        display: block;
+        padding: 5px 10px;
+    
+        &,
+        &:visited {
+          color: $text-color
+        }
+          
+        &.page-link-active {
+          color: $splatomatic-brand-color;
+        }
+    
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .splatomatic .page-content {  
+    text-transform: lowercase;
+  }
