@@ -34,6 +34,7 @@ body.splatomatic {
 .splatomatic-banner {
   position: sticky;
   top:0;
+  z-index: 1;
   
   @include media-query($on-laptop) {
     position: inherit;
@@ -43,7 +44,6 @@ body.splatomatic {
   &.splatomatic-banner-withsplash {
     margin-top: -271px;
     margin-bottom: 205px;
-    z-index: 1;
     
     @include media-query($on-smallscreen) {
       margin-top: -210px;
@@ -74,6 +74,7 @@ body.splatomatic {
   }
 }
 .splatomatic-splash {
+  z-index: 1;
 
   @include media-query($on-laptop) {
     position: inherit;
@@ -154,7 +155,9 @@ body.splatomatic {
     line-height: $base-line-height * $base-font-size * 2.25;
     background-color: $background-color;
     position:sticky;
-    top: 66px;
+    top: 0;
+    margin-top: -66px;
+    padding-top: 66px;
   
     .nav-trigger {
         display: none;
@@ -181,7 +184,8 @@ body.splatomatic {
     }
     
     @include media-query($on-smallscreen) {
-      top: 51px;
+      margin-top: -51px;
+      padding-top: 51px;
     }
 
     @include media-query($on-laptop) {    

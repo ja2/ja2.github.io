@@ -24,7 +24,7 @@ email: jon@ja2.co.uk
 description: Professional Software Development by Jon Egerton
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ja2.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+twitter_username: Ja2Ltd
 github_username: ja2
 
 # Build settings
