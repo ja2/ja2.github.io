@@ -135,10 +135,10 @@ body.fotum {
 
 .fotum-content-withsplash {
 
-  min-height: calc(100vh - 346px);
+  min-height: calc(100vh - 271px);
   
   @include media-query($on-smallscreen) {
-    min-height: calc(100vh - 331px);
+    min-height: calc(100vh - 256px);
   }
 
   @include media-query($on-laptop) {

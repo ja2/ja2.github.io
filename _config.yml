@@ -20,12 +20,13 @@
 
 title: JA2 Technologies Ltd
 strapline: Professional Software Development by Jon Egerton
-email: jon@ja2.co.uk
+author: Copyright 2020 JA2 Technologies Ltd
+# email: jon@ja2.co.uk
 description: Professional Software Development by Jon Egerton
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ja2.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: Ja2Ltd
-github_username: ja2
+twitter_username: ja2ltd
+#github_username: ja2
 
 # Build settings
 theme: minima

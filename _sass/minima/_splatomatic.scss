@@ -33,7 +33,7 @@ body.splatomatic {
 
 .splatomatic-banner {
   position: sticky;
-  top:0;
+  top:8px;
   z-index: 1;
   
   @include media-query($on-laptop) {
