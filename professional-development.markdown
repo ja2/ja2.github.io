@@ -16,7 +16,7 @@ I perform, and enjoy, fulfilling roles producing solutions, mentoring developers
 
 In recent years my biggest successes have been in building large scale systems, not just in the traditional terms of production scale, but also during release and development, making it possible for large numbers of developers to work on many projects in the same code-base without conflict, and to be able to release those many projects at a very high cadence.
 
-I am available for small ad-hoc freelance and consultancy work, where I am able to use my experience and expertise to input into and troubleshoot development projects or production systems. If you are interested in engaging me, then either sent me an in-mail in linked in, or email at jon {at} ja2.co.uk
+I am available for small ad-hoc freelance and consultancy work, where I am able to use my experience and expertise to input into and troubleshoot development projects or production systems. If you are interested in engaging me, then either send me an in-mail on linked in, or email at jon {at} ja2.co.uk
 
 My technology stack expertise includes:
 
