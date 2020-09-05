@@ -6,9 +6,9 @@ permalink: /software/splatomatic
 custom_splash: true
 ---
 
-# Splat-O-Matic App Family
+# Splat-O-Matic Family
 
-Splat-O-Matic is family of apps all sharing the same basic engine, but with a variety of topical themes.
+Splat-O-Matic is family of apps all sharing the same game engine, but with a variety of topical themes.
 
 The currently available games are:
 
