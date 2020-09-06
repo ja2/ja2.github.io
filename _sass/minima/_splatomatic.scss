@@ -187,10 +187,6 @@ body.splatomatic {
       margin-top: -51px;
       padding-top: 51px;
     }
-
-    @include media-query($on-laptop) {    
-      top: calc(100vw * 0.069);
-    }
   
     @include media-query($on-laptop) {
       position: absolute;
@@ -201,6 +197,7 @@ body.splatomatic {
       border-radius: 5px;
       text-align: right;
       z-index: 99;
+      padding: 0 15px;
 
       .wrapper {        
         width: auto;
