@@ -4,6 +4,8 @@ title:  Fotum
 menu_title: Home
 permalink: /software/fotum
 custom_splash: true
+redirect_from:
+  - /fotum
 ---
 
 #  Fotum

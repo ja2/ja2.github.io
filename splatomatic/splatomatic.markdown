@@ -4,6 +4,8 @@ title:  Splat-O-Matic App Family
 menu_title: Home
 permalink: /software/splatomatic
 custom_splash: true
+redirect_from:
+  - /splatomatic
 ---
 
 # Splat-O-Matic Family

@@ -3,6 +3,8 @@ layout: splatomatic-page
 title:  Privacy Policy - Splat-O-Matic App Family
 menu_title: Privacy
 permalink: /software/splatomatic/privacy
+redirect_from:
+  - /splatomatic/privacy
 ---
 
 # Splat-O-Matic App Family - Privacy Policy

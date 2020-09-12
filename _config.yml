@@ -32,6 +32,7 @@ google_analytics: UA-34255130-6
 # Build settings
 theme: minima
 plugins:
+  - jekyll-redirect-from
   - jekyll-feed
 
 # Exclude from processing.
