@@ -55,7 +55,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-fotum_status: green
+fotum_status: amber
 
 header_pages:
   - professional-development.markdown

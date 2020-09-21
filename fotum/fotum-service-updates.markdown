@@ -7,6 +7,10 @@ permalink: /software/fotum/service-updates
 
 # Fotum – Service Updates
 
+## Update: 21-Sep-2020 @ 07:10 UTC – Fotum fails to start when Fill resize mode is used
+
+Version 1.10 has introduced an issue where the screensaver fails to start if the Fill resize mode is being used. A fix is being investigated. As a workaround in the meantime, please select one of the other resize modes.
+
 ## Update: 04-Aug-2020 @ 21:35 UTC – Google Photos in Fotum
 
 Version 1.9 is released and has been in use for over 24 hours. Traffic levels to Google Photos API have now returned to normal levels – far below the daily quota. This looks to have resolved the issue.
