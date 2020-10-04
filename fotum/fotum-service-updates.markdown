@@ -7,6 +7,10 @@ permalink: /software/fotum/service-updates
 
 # Fotum – Service Updates
 
+## Update: 25-Sep-2020 @ 20:15 UTC - Fill resize bug
+
+Verion 1.11 has now been published to the Roku store with a fix for the issue introduced into version 1.10. If you used the workaround, then once your installation of the Fotum app has upgraded Fill resize mode can be re-selected 
+
 ## Update: 21-Sep-2020 @ 07:10 UTC – Fotum fails to start when Fill resize mode is used
 
 Version 1.10 has introduced an issue where the screensaver fails to start if the Fill resize mode is being used. A fix is being investigated. As a workaround in the meantime, please select one of the other resize modes.
